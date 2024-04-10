@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import './Hero.css'
 import heroVideo from '../assets/scrumday-hero-video.mp4'
+
 function Hero() {
 
     return (
