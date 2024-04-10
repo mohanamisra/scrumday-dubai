@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
+import logo from '../../assets/logo.svg'
 
 function Navbar() {
 
@@ -7,7 +8,7 @@ function Navbar() {
         <div className = 'container'>
             <div className='left'>
                 <div className='logo'>
-                    <img src = '../../assets/logo.svg'/>
+                    <img src = {logo}/>
                 </div>
             </div>
             <div className='right'>

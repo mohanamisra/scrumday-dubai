@@ -16,7 +16,6 @@ function Hero() {
                     <p>Scrumday Dubai</p>
                 </div>
             </div>
-            <Navbar/>
         </>
     )
 }
