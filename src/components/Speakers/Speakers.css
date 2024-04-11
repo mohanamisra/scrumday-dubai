@@ -87,3 +87,19 @@
     font-size: 18px; /* Adjust font size */
     color: #333; /* Adjust text color */
 }
+
+@media only screen and (max-width: 768px) {
+    .speakers-content {
+        flex-direction: column;
+    }
+    .speakers-heading {
+        margin-left: 0;
+        font-size: 48px;
+        margin-bottom: 32px;
+        font-weight: 800;
+    }
+
+    .speakers-text {
+        text-align: center;
+    }
+}
