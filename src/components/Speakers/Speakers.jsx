@@ -47,9 +47,11 @@ function Speakers() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        cssEase: 'linear'
     };
 
 
@@ -58,10 +60,9 @@ function Speakers() {
             <div className = 'speakers-content'>
                 <h1 className = 'speakers-heading'>Speaker Details</h1>
                 <p className = 'speakers-text'>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    Explore revolutionary ideas with the region's brightest minds
+                    and immerse yourself in the event that will redefine your
+                    vision of the agile world.
                 </p>
             </div>
             <div className = 'speakers-details'>
