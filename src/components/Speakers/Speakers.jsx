@@ -47,11 +47,11 @@ function Speakers() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 5500,
+        speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
+        slidesToScroll: 1
     };
+
 
     return (
         <div className = 'speakers-container'>

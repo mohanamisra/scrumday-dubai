@@ -10,9 +10,13 @@
 .card img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .card .desc {
     border-left: 1.5px solid gray;
+}
+
+.slick-slider > div {
+    height: 350px;
 }
