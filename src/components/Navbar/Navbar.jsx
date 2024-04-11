@@ -5,13 +5,10 @@ function Navbar() {
     const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
-        // Get the navbar
         const navbar = document.getElementById("navbar");
 
-        // Get the offset position of the navbar
         const sticky = navbar.offsetTop;
 
-        // Function to handle scroll event
         function handleScroll() {
             if (window.pageYOffset >= sticky) {
                 setIsSticky(true);
@@ -20,14 +17,12 @@ function Navbar() {
             }
         }
 
-        // Add event listener for scroll
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup function to remove event listener
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // Empty dependency array ensures the effect runs only once
+    }, []);
 
     return (
         <div className={`container ${isSticky ? 'sticky' : ''}`} id="navbar">
