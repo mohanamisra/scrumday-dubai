@@ -71,6 +71,15 @@
     flex: 1;
     padding-left: 30px; /* Add space between line and details */
     border-left: 1.5px solid gray; /* Add line effect */
+    padding-top: 32px;
+}
+
+.card .speaker-name {
+    font-weight: 700;
+}
+
+.card .speaker-desc {
+    font-style: italic;
 }
 
 .card p {

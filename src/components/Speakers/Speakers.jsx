@@ -13,32 +13,32 @@ import p6 from '../../assets/p6.jpg'
 
 const slides = [
     {
-        name: 'Jane',
+        name: 'Jane Doe',
         img: p1,
         desc: '5-time TEDx Speaker'
     },
     {
-        name: 'Joe',
+        name: 'Joe Doe',
         img: p2,
         desc: '5-time TEDx Speaker'
     },
     {
-        name: 'Max',
+        name: 'Max Filbert',
         img: p3,
         desc: '5-time TEDx Speaker'
     },
     {
-        name: 'Karen',
+        name: 'Ahmad Shah',
         img: p4,
         desc: '5-time TEDx Speaker'
     },
     {
-        name: 'Ahmad',
+        name: 'Karen Williby',
         img: p5,
         desc: '5-time TEDx Speaker'
     },
     {
-        name: 'Shah',
+        name: 'Suhaas Shah',
         img: p6,
         desc: '5-time TEDx Speaker'
     }
@@ -73,8 +73,8 @@ function Speakers() {
                             <img src = {d.img} alt = ''/>
                         </div>
                         <div className = 'desc'>
-                            <p>{d.name}</p>
-                            <p>{d.desc}</p>
+                            <p className = 'speaker-name'>{d.name}</p>
+                            <p className = 'speaker-desc'>{d.desc}</p>
                         </div>
                     </div>
                 ))}
