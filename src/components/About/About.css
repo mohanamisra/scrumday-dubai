@@ -1,22 +1,48 @@
+/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Container styles */
 .about-container {
     display: flex;
     align-items: center;
-    width: 100vw;
-    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 36px;
+    margin-top: 36px;
 }
 
+/* Image styles */
+.image {
+    flex: 0 0 50%; /* Take up half of the container width */
+    padding: 20px; /* Add some spacing around the image */
+}
+
+.image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any potential image spacing */
+}
+
+/* Content styles */
 .about-content {
-    width: 50%;
+    flex: 0 0 50%; /* Take up half of the container width */
+    padding: 20px; /* Add some spacing around the content */
+}
+
+.heading {
+    font-size: 32px; /* Increase heading font size */
+    margin-bottom: 10px; /* Reduce heading margin */
+    color: #333; /* Adjust text color */
 }
 
 .text {
-}
-
-.image {
+    font-size: 18px; /* Increase text font size */
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #666; /* Adjust text color */
+    margin-bottom: 15px; /* Reduce margin bottom for text */
 }

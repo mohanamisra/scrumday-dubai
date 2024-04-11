@@ -1,22 +1,82 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
 .speakers-container {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 40px 20px; /* Add some padding */
 }
 
+/* Speakers content */
 .speakers-content {
+    text-align: center; /* Center text */
+    margin-bottom: 30px; /* Add space between content and slider */
+}
+
+.speakers-heading {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333; /* Adjust text color */
+}
+
+.speakers-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Adjust text color */
+}
+
+/* Speakers slider */
+.speakers-details {
+    width: 100%;
+    max-width: 800px; /* Limit slider width */
+    margin: 0 auto; /* Center slider */
+}
+
+.slick-slider {
+    position: relative; /* Make sure the line is positioned relative to the slider */
+}
+
+/* Vertical line */
+.line {
+    position: absolute;
+    left: 50%; /* Position line in the center horizontally */
+    top: 0;
+    height: 100%;
+    width: 1.5px;
+    background-color: #ccc; /* Adjust line color */
+    z-index: 1; /* Ensure line appears above speaker details */
+}
+
+/* Speaker card */
+.card {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 30px;
 }
 
 .card img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make images circular */
+    margin-right: 20px; /* Add space between image and details */
 }
 
 .card .desc {
-    border-left: 1.5px solid gray;
+    flex: 1;
+    padding-left: 30px; /* Add space between line and details */
+    border-left: 1.5px solid gray; /* Add line effect */
 }
 
-.slick-slider > div {
-    height: 350px;
+.card p {
+    margin-bottom: 10px; /* Add space between details */
+    font-size: 18px; /* Adjust font size */
+    color: #333; /* Adjust text color */
 }
