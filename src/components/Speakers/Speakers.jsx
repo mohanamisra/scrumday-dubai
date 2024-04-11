@@ -25,16 +25,16 @@ function Speakers() {
     ]
     return (
         <div className = 'speakers-container'>
-            <div className = 'speaker-content'>
-                <h1 className = 'speaker-heading'>Speaker Details</h1>
-                <p className = 'speaker-text'>
+            <div className = 'speakers-content'>
+                <h1 className = 'speakers-heading'>Speaker Details</h1>
+                <p className = 'speakers-text'>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 </p>
             </div>
-            <div className = 'speaker-details'>
+            <div className = 'speakers-details'>
                 <Slider slides = {slides}/>
             </div>
         </div>

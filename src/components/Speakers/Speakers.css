@@ -1,0 +1,8 @@
+.speakers-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.speakers-content {
+    display: flex;
+}
