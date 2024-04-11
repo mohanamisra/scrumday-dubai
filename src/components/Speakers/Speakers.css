@@ -17,6 +17,7 @@
 .speakers-content {
     text-align: center; /* Center text */
     margin-bottom: 30px; /* Add space between content and slider */
+    display: flex;
 }
 
 .speakers-heading {
