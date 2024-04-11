@@ -5,7 +5,7 @@ import logo from '../../assets/logo.svg'
 function Navbar() {
 
     return (
-        <div className = 'container'>
+        <div className = 'container sticky'>
             <div className='left'>
                 <div className='logo'>
                     Logo
