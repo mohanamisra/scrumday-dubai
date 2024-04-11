@@ -51,7 +51,17 @@ function Speakers() {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
+        ]
     };
 
 
