@@ -27,7 +27,7 @@ function FAQs() {
     }
 
     return (
-        <div className = 'faq-container'>
+        <div className = 'faq-container' id = 'faqs'>
             <h1 className = 'faq-heading'>Got Questions?</h1>
             <div className = 'item-container'>
                     {questions.map((item, i) => {

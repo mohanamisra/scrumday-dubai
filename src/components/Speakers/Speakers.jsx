@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import './Speakers.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -66,7 +65,7 @@ function Speakers() {
 
 
     return (
-        <div className = 'speakers-container'>
+        <div className = 'speakers-container' id = 'speakers'>
             <div className = 'speakers-content'>
                 <h1 className = 'speakers-heading'>Speaker Details</h1>
                 <p className = 'speakers-text'>

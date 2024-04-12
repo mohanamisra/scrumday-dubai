@@ -2,7 +2,7 @@ import './Schedule.css'
 function Schedule() {
 
     return (
-        <div className = 'schedule-container'>
+        <div className = 'schedule-container' id = 'schedule'>
             <h1 className = 'schedule-heading'>The Event Line-Up</h1>
             <div className='schedule-cards-container'>
                 <div className='schedule-card'>
