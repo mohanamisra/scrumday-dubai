@@ -22,7 +22,8 @@
 }
 
 .item {
-    max-width: 900px;
+    min-width: 900px;
+    max-width: 100%;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -39,4 +40,14 @@
     font-size: 18px;
     line-height: 28px;
     text-align: justify;
+}
+
+.question-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-icon {
+    font-size: 32px;
+    color: orange;
 }

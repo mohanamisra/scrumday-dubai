@@ -1,6 +1,13 @@
 import {useState} from "react";
 import './FAQs.css'
-import 
+import {IconContext} from "react-icons";
+import {FiPlus, FiMinus} from "react-icons/fi";
+import {MdArrowDropDown} from "react-icons/md";
+import {BiDownArrow} from "react-icons/bi";
+import {GiBroadheadArrow} from "react-icons/gi";
+import {BsArrow90DegDown, BsBoxArrowDown} from "react-icons/bs";
+import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
+
 const questions = [
     {question: 'Will Scrum Day Guatemala have the option to see it virtually?',
         answer: 'In this edition of Scrum Day Guatemala, we will not have the option to attend virtually. Seize the opportunity to buy your ticket, as we will have a limited number of participants. We aim to provide high-level knowledge and share it with our participants.'},
@@ -32,8 +39,15 @@ function FAQs() {
                     {questions.map((item, i) => {
                         return (
                             <div className = 'item' key = {i} onClick = {() => toggle(i)}>
-                                <h1 className = 'faq-question'>{item.question}</h1>
-                                <p className = 'faq-answer'>{item.answer}</p>
+                                <div className='question-wrapper'>
+                                    <h1 className='faq-question'>{item.question}</h1>
+                                    <div className='icon-div'>{clicked === i ?
+                                        <IoIosArrowUp className = 'arrow-icon'/> : <IoIosArrowDown className = 'arrow-icon'/>}</div>
+                                </div>
+                                {clicked === i ? (<div className='dropdown'>
+                                        <p className='faq-answer'>{item.answer}</p>
+                                    </div>
+                                ) : null}
                             </div>
                         )
                     })}
