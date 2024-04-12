@@ -1,10 +1,31 @@
-import { useState } from 'react'
+import {useEffect} from "react";
 import './Hero.css'
 import heroVideo from '../../assets/heroVideo.mp4'
-
-import Navbar from "../Navbar/Navbar.jsx";
+import {gsap} from "gsap";
+import SplitType from "split-type";
 
 function Hero() {
+
+    useEffect(() => {
+        const heroText = new SplitType('h1.hero-heading', {types: 'words'});
+        const words = heroText.words;
+
+        gsap.fromTo(
+            words,
+            {
+                y: 100,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                stagger: 0.05,
+                duration: 2,
+                ease: 'power4.out',
+            }
+        )
+
+    }, [])
 
     return (
         <>

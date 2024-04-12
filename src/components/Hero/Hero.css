@@ -38,6 +38,7 @@ video {
 
 .hero-heading {
     font-size: 84px;
+    overflow-y: hidden;
 }
 
 .tagline {
