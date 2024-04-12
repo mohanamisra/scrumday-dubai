@@ -59,6 +59,14 @@
     margin-top: 48px;
 }
 
+.dropdown {
+    transition: max-height 1s ease-in-out;
+}
+
+.faq-answer {
+    transition: max-height 1s ease-in-out;
+}
+
 @media only screen and (max-width: 768px) {
 
     .faq-container {

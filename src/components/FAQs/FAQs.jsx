@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import './FAQs.css'
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 
