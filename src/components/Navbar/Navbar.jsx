@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
+import Speakers from "../Speakers/Speakers.jsx";
 
 function Navbar() {
     const [isSticky, setIsSticky] = useState(false);
@@ -32,9 +33,9 @@ function Navbar() {
                 </div>
             </div>
             <div className='right'>
-                <div className='exhibitors'>Exhibitors</div>
-                <div className='schedule'>Schedule</div>
-                <div className='faqs'>FAQs</div>
+                <div className='speakers'><a href = '#speakers'>Speakers</a></div>
+                <div className='schedule'><a href = '#schedule'>Schedule</a></div>
+                <div className='faqs'><a href = '#faqs'>FAQs</a></div>
             </div>
         </div>
     )

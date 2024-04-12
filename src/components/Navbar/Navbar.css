@@ -13,35 +13,25 @@
     min-height: 100px;
     font-size: 18px; /* Slightly reduced font size */
 
-    background: rgba(255, 151, 4, 0.65); /* Translucent warm orange background color */
-    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-    border-bottom-left-radius: 16px; /* Border radius only on lower left corner */
-    border-bottom-right-radius: 8px; /* Border radius only on lower right corner */
-    box-shadow: 0px 8px 16px rgba(255, 165, 158, 0.2); /* Soft shadow for depth */
+    background: rgba(255, 151, 4, 0.65);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(255, 165, 158, 0.2);
 }
 
 .right {
     display: flex;
-    gap: 72px; /* Reduced gap between items */
-    font-size: 36px;
+    gap: 72px;
+    font-size: 28px;
     font-weight: 500;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Text shadow for improved readability */
+    color: white;
 }
 
 .logo {
     font-weight: 900;
     font-size: 36px; /* Increase logo font size */
     color: #fff; /* White color for logo text */
-}
-
-.right div {
-    color: #fff; /* White color for navbar items */
-    cursor: pointer; /* Add pointer cursor to navbar items */
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.right div:hover {
-    color: rgba(255, 255, 255, 0.7); /* Lighten color on hover */
 }
 
 .sticky {
@@ -61,6 +51,11 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
