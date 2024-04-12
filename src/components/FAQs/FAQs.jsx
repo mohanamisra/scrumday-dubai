@@ -30,7 +30,6 @@ function FAQs() {
         <div className = 'faq-container'>
             <h1 className = 'faq-heading'>Got Questions?</h1>
             <div className = 'faq-container'>
-                <div className = 'faq-card'>
                     {questions.map((item, i) => {
                         return (
                             <div className = 'item' key = {i} onClick = {() => toggle(i)}>
@@ -46,7 +45,6 @@ function FAQs() {
                             </div>
                         )
                     })}
-                </div>
             </div>
         </div>
     )

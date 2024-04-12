@@ -36,7 +36,6 @@
     padding: 20px;
     margin-bottom: 16px;
     margin-top: 16px;
-    gap: 54px;
     width: 100%;
     max-width: 800px;
     height: 150px;
@@ -47,17 +46,17 @@
 .card-left {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    min-height: 100%;
+}
 
-    gap: 11px;
-    max-width: 75%;
+.schedule-card-right {
+    align-self: stretch;
 }
 
 .card-heading {
     font-weight: 700;
     font-size: 28px;
     color: #FFA500;
+    margin-bottom: 32px;
 }
 
 .card-details {
@@ -71,4 +70,23 @@
 .time {
     font-weight: 600;
     color: #666;
+}
+
+@media only screen and (max-width: 768px) {
+    .schedule-heading {
+        max-width: 300px;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .schedule-card {
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 280px;
+        max-width: 400px;
+    }
+
+    .schedule-cards-container {
+        margin: 0 auto;
+    }
 }
