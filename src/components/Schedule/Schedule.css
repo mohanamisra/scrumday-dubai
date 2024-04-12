@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333333;
 }
 
 .schedule-container {
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #333333;
 }
 
 .schedule-heading {
@@ -38,17 +39,19 @@
     gap: 54px;
     width: 100%;
     max-width: 800px;
+    height: 150px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    height: 150px;
 }
 
 .card-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    min-height: 100%;
 
     gap: 11px;
+    max-width: 75%;
 }
 
 .card-heading {
