@@ -1,0 +1,9 @@
+.cursor {
+    background-color: rgba(0, 0, 255, 0.6);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
