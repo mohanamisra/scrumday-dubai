@@ -38,10 +38,9 @@ function FAQs() {
                                     <div className='icon-div'>{clicked === i ?
                                         <IoIosArrowUp className = 'arrow-icon'/> : <IoIosArrowDown className = 'arrow-icon'/>}</div>
                                 </div>
-                                {clicked === i ? (<div className='dropdown'>
-                                        <p className='faq-answer'>{item.answer}</p>
+                                <div className = {`dropdown ${clicked === i ? 'show' : 'hide'}`}>
+                                        <p className= {`faq-answer ${clicked === i? 'show' : 'hide'}`}>{item.answer}</p>
                                     </div>
-                                ) : null}
                             </div>
                         )
                     })}
