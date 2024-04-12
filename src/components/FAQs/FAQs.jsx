@@ -1,11 +1,5 @@
 import {useState} from "react";
 import './FAQs.css'
-import {IconContext} from "react-icons";
-import {FiPlus, FiMinus} from "react-icons/fi";
-import {MdArrowDropDown} from "react-icons/md";
-import {BiDownArrow} from "react-icons/bi";
-import {GiBroadheadArrow} from "react-icons/gi";
-import {BsArrow90DegDown, BsBoxArrowDown} from "react-icons/bs";
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 
 const questions = [
@@ -27,8 +21,9 @@ function FAQs() {
     const toggle = (index) => {
         if(clicked === index)
             setClicked(null);
-
-        setClicked(index);
+        else {
+            setClicked(index);
+        }
     }
 
     return (
