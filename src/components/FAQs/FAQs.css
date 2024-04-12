@@ -54,3 +54,40 @@
     font-size: 32px;
     color: orange;
 }
+
+.item-container {
+    margin-top: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .faq-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .faq-heading {
+        font-weight: 800;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .item-container {
+        margin: 0 auto;
+    }
+
+    .item {
+        min-width: 175px;
+        margin-bottom: 30px;
+    }
+
+    .question-wrapper {
+        max-width: 340px;
+    }
+
+    .faq-question {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 80%;
+    }
+}

@@ -29,7 +29,7 @@ function FAQs() {
     return (
         <div className = 'faq-container'>
             <h1 className = 'faq-heading'>Got Questions?</h1>
-            <div className = 'faq-container'>
+            <div className = 'item-container'>
                     {questions.map((item, i) => {
                         return (
                             <div className = 'item' key = {i} onClick = {() => toggle(i)}>
