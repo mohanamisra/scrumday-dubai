@@ -34,7 +34,7 @@ function Hero() {
                 <video src = {heroVideo} autoPlay loop muted/>
                 <div className = 'content'>
                     <h1 className = 'hero-heading'>Join Us At Scrumday Dubai</h1>
-                    <p className = 'tagline'>Learn Agile Development Like Never Before</p>
+                    <p className = 'tagline'>Where Collaboration meets Innovation</p>
                 </div>
             </div>
         </>
