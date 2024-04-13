@@ -7,6 +7,8 @@ import Speakers from "./components/Speakers/Speakers.jsx";
 import Schedule from "./components/Schedule/Schedule.jsx";
 import FAQs from "./components/FAQs/FAQs.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import FloatingActionButton
+    from "./components/FloatingActionButton/FloatingActionButton.jsx";
 
 function App() {
     const myCursor = useRef(null);
@@ -37,6 +39,7 @@ function App() {
             <Schedule/>
             <FAQs/>
             <Footer/>
+            <FloatingActionButton/>
         </>
     )
 }

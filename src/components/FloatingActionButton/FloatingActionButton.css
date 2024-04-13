@@ -1,0 +1,25 @@
+.fab-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fab {
+    position: fixed;
+    top: auto;
+    bottom: 40px;
+    padding: 20px;
+    overflow-y: hidden;
+
+    background-color: #FFA500;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.fab:hover {
+    background-color: #333333;
+    box-shadow: 0 0 10px 2px #FFA500;
+    font-size: 22px;
+    transition: font-size 0.1s ease-in-out;
+}
