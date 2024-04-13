@@ -30,6 +30,10 @@
     color: white;
 }
 
+.right div a {
+    cursor: pointer;
+}
+
 .logo {
     font-weight: 900;
     font-size: 36px; /* Increase logo font size */
