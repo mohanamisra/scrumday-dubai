@@ -1,24 +1,21 @@
-/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Container styles */
 .speakers-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    padding: 40px 20px; /* Add some padding */
+    align-items: center;
+    padding: 40px 20px;
     margin: 0 auto;
     max-width: 1300px;
 }
 
-/* Speakers content */
 .speakers-content {
-    text-align: center; /* Center text */
-    margin-bottom: 30px; /* Add space between content and slider */
+    text-align: center;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -26,7 +23,7 @@
 .speakers-heading {
     font-size: 48px;
     margin-bottom: 10px;
-    color: #333; /* Adjust text color */
+    color: #333;
     width: 100%;
     font-weight: 700;
     margin-left: -100px;
@@ -35,22 +32,20 @@
 .speakers-text {
     font-size: 20px;
     line-height: 1.6;
-    color: #666; /* Adjust text color */
+    color: #666;
     text-align: justify;
 }
 
-/* Speakers slider */
 .speakers-details {
     width: 100%;
-    max-width: 1000px; /* Limit slider width */
-    margin: 0 auto; /* Center slider */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .slick-slider {
     overflow-y: hidden;
 }
 
-/* Speaker card */
 .card {
     position: relative;
     display: flex;
@@ -62,15 +57,15 @@
 .card img {
     width: 200px;
     height: 200px;
-    border-radius: 50%; /* Make images circular */
-    margin-right: 20px; /* Add space between image and details */
+    border-radius: 50%;
+    margin-right: 20px;
     box-shadow: 1px 1px 10px #aaaaaa;
 }
 
 .card .desc {
     flex: 1;
-    padding-left: 30px; /* Add space between line and details */
-    border-left: 1.5px solid gray; /* Add line effect */
+    padding-left: 30px;
+    border-left: 1.5px solid gray;
     padding-top: 32px;
 }
 
@@ -83,9 +78,9 @@
 }
 
 .card p {
-    margin-bottom: 10px; /* Add space between details */
-    font-size: 18px; /* Adjust font size */
-    color: #333; /* Adjust text color */
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
 }
 
 @media only screen and (max-width: 768px) {

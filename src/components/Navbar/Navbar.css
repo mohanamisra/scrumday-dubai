@@ -8,10 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px; /* Updated padding for better spacing */
+    padding: 16px 32px;
 
     min-height: 100px;
-    font-size: 18px; /* Slightly reduced font size */
+    font-size: 18px;
 
     background: rgba(255, 151, 4, 0.65);
     backdrop-filter: blur(10px);
@@ -36,16 +36,16 @@
 
 .logo {
     font-weight: 900;
-    font-size: 36px; /* Increase logo font size */
-    color: #fff; /* White color for logo text */
+    font-size: 36px;
+    color: #fff;
 }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the navbar stays on top of other content */
-    animation: fadeInDown 0.5s ease; /* Add animation for smooth appearance */
+    z-index: 1000;
+    animation: fadeInDown 0.5s ease;
 }
 
 @keyframes fadeInDown {

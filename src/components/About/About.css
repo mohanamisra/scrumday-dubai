@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,43 +9,42 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1400px; /* Limit width for better readability */
-    margin: 0 auto; /* Center the container */
+    max-width: 1400px;
+    margin: 0 auto;
     margin-bottom: 36px;
     margin-top: 36px;
 }
 
 /* Image styles */
 .image {
-    flex: 0 0 50%; /* Take up half of the container width */
-    padding: 20px; /* Add some spacing around the image */
+    flex: 0 0 50%;
+    padding: 20px;
 }
 
 .image img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any potential image spacing */
+    max-width: 100%;
+    height: auto;
+    display: block;
     box-shadow: 0 4px 20px -2px gray;
 }
 
-/* Content styles */
 .about-content {
-    flex: 0 0 50%; /* Take up half of the container width */
-    padding: 20px; /* Add some spacing around the content */
+    flex: 0 0 50%;
+    padding: 20px;
 }
 
 .heading {
-    font-size: 48px; /* Increase heading font size */
-    margin-bottom: 10px; /* Reduce heading margin */
-    color: #333; /* Adjust text color */
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .text {
     margin-top: 36px;
-    font-size: 20px; /* Increase text font size */
-    line-height: 1.6; /* Increase line height for better readability */
-    color: #666; /* Adjust text color */
-    margin-bottom: 15px; /* Reduce margin bottom for text */
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
 }
 
 .bold-text {
@@ -55,10 +53,10 @@
 
 @media only screen and (max-width: 768px) {
     .image {
-        display: none; /* Hide the image on smaller screens */
+        display: none;
     }
     .about-content {
-        flex: 1; /* Take up the full width on smaller screens */
+        flex: 1;
         text-align: justify;
     }
 
