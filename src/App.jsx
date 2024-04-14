@@ -30,7 +30,7 @@ function App() {
 
 
     return (
-        <>
+        <div className = 'app-container'>
             <div className='cursor' ref = {myCursor}></div>
             <Hero/>
             <Navbar/>
@@ -40,7 +40,7 @@ function App() {
             <FAQs/>
             <Footer/>
             <FloatingActionButton/>
-        </>
+        </div>
     )
 }
 
